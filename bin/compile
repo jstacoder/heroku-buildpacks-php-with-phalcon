@@ -50,8 +50,8 @@ rm -f php.tar.gz
 
 # Update CONF
 echo "-----> Updating Config"
-#cp $LP_DIR/conf/httpd.conf apache/conf
-#cp $LP_DIR/conf/php.ini php
+cp $LP_DIR/conf/httpd.conf apache/conf
+cp $LP_DIR/conf/php.ini php
 
 # Setting up Enviroment
 echo "-----> Setting up Enviroment"
