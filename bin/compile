@@ -56,7 +56,7 @@ mkdir -p bin
 ln -s /app/php/bin/php bin/php
 
 # Composer Dependencies
-if [ -f www/composer.json ] && [ ! -d www/vendor ]; then
+if [ -f src/composer.json ] && [ ! -d www/vendor ]; then
   PHP_EXTENSION_DIR=$($BUILD_DIR/php/bin/php-config --extension-dir)
   BUILD_PHP_EXTENSION_DIR=$(basename $PHP_EXTENSION_DIR)
   GIT_DIR_ORIG=$GIT_DIR
